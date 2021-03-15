@@ -1,0 +1,15 @@
+.navlinks{
+    color: white;
+}
+.navlinks:hover{
+    color: white;
+}
+@media only screen and (max-width: 991px){
+    .navlinks{
+        color: black;
+    }
+    .navlinks:hover{
+        color: black;
+    }
+} 
+
