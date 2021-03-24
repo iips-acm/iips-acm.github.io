@@ -19,3 +19,35 @@
     /* font-size: 18px; */
     color: #fff;
   }
+
+  #bootstrapForm input {
+      background: transparent;
+      width: 100%;
+      height: 30px;
+      color: #fff;
+      border: none;
+  }
+
+    #bootstrapForm textarea {
+        background: transparent;
+        width: 100%;
+        height: 100px;
+        color: #fff;
+        border: none;
+    }
+
+    #bootstrapForm #heading {
+        border: none;
+    }
+    #h1_heading {
+        font-weight: bold !important;
+        /*text-align: center !important;*/
+    }
+    #btnSubmit {
+        background: transparent !important;
+        border-radius: 100px !important;
+        width: 180px !important;
+        height: 40px !important;
+        border: 1px solid !important;
+    }
+

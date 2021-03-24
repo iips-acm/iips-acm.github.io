@@ -34,6 +34,7 @@ import AboutComponent from "../../components/AboutComponent/AboutComponent";
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
 import $ from 'jquery';
 import '../../App.css';
+import Contact from "../Contact/Contact";
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
@@ -83,6 +84,7 @@ export default function Components(props) {
     <SliderComponent />
     <AboutComponent />
     <TeamsComponent  />
+      <Contact />
     </div>
     </div>
       <Footer fixed />

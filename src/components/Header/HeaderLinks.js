@@ -33,9 +33,9 @@ export default function HeaderLinks(props) {
     } else {
       window.open('/', '_self')
     }
-    
+
   }
-  
+
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
@@ -90,6 +90,19 @@ export default function HeaderLinks(props) {
           </Button>
         </Link>
       </ListItem> */}
+         <ListItem className={classes.listItem}>
+        <Link className="navlinks" onClick={() => {
+          gotoSection('contact');
+        }}>
+          <Button
+            color="transparent"
+            className={classes.navLink}
+            style={{ fontSize: 18 }}
+          >
+            Contact
+          </Button>
+        </Link>
+      </ListItem>
       <ListItem className={classes.listItem}>
         <Link className="navlinks" to="/codeofconduct">
           <Button
