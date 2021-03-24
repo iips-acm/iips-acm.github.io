@@ -38,7 +38,6 @@ export default function CodeOfConduct(props) {
           top: 50,
           backgroundColor: "#00091B",
           color: "rgba(255,255,255,0.8)",
-          // height: "95vh",
         }}
       >
         <div className={classes.container}>

@@ -30,6 +30,7 @@ import SectionDownload from "./Sections/SectionDownload.js";
 import SliderComponent from "../../components/Slider/SliderComponent.js";
 import styles from "assets/jss/material-kit-react/views/components.js";
 import TeamsComponent from "../../components/Teams/TeamsComponent";
+import AboutComponent from "../../components/AboutComponent/AboutComponent";
 
 const useStyles = makeStyles(styles);
 
@@ -45,13 +46,12 @@ export default function Components(props) {
         color="transparent"
         {...rest}
       />
-    <div style={{ position:"relative", backgroundColor: "#00091B", color: "white" ,height:"95vh" }}>
-    {/* <div className={classes.container}>
-      <h1>Home</h1>
-      <p>Website is Underconstuction</p>
-    </div> */}
+    <div style={{ position:'relative', backgroundColor: "#00091B", color: "white" ,height:"150vh" }}>
+    <div className={classes.container}>
     <SliderComponent />
-    <TeamsComponent />
+    <AboutComponent />
+    <TeamsComponent  />
+    </div>
     </div>
       <Footer fixed />
     </div>

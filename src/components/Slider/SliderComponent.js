@@ -1,44 +1,75 @@
 import React from "react";
+// react component for creating beautiful carousel
+import Carousel from "react-slick";
+import { makeStyles } from "@material-ui/core/styles";
+import LocationOn from "@material-ui/icons/LocationOn";
+// core components
+import GridContainer from "components/Grid/GridContainer.js";
+import GridItem from "components/Grid/GridItem.js";
+import Card from "components/Card/Card.js";
+import styles from "assets/jss/material-kit-react/views/components.js";
+const useStyles = makeStyles(styles);
 const SliderComponent = () => {
-    return(
-        <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
-  <div className="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src="http://iips.edu.in/images/slider/slider2.jpg" className="d-block w-100" alt="..." />
-      <div className="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
+  const classes = useStyles();
+const settings = {
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true
+};
+return (
+  
+    <div className={classes.container}>
+      <GridContainer>
+    <GridItem xs={12} sm={12} md={12}>
+      <Card>
+        <Carousel {...settings}>
+          <div>
+            <img
+              src="http://iips.edu.in/images/slider/slider2.jpg" 
+              alt="First slide"
+              className="slick-image"
+            />
+            {/* <div className="slick-caption">
+              <h4>
+                <LocationOn className="slick-icons" />Yellowstone
+                National Park, United States
+              </h4>
+            </div> */}
+          </div>
+          <div>
+            <img
+              src="http://iips.edu.in/images/events/stu.jpg"
+              alt="Second slide"
+              className="slick-image"
+            />
+            {/* <div className="slick-caption">
+              <h4>
+                <LocationOn className="slick-icons" />Somewhere Beyond,
+                United States
+              </h4>
+            </div> */}
+          </div>
+          <div>
+            <img
+              src="http://iips.edu.in/images/events/iips_placement.jpg"
+              alt="Third slide"
+              className="slick-image"
+            />
+            {/* <div className="slick-caption">
+              <h4>
+                <LocationOn className="slick-icons" />Yellowstone
+                National Park, United States
+              </h4>
+            </div> */}
+          </div>
+        </Carousel>
+      </Card>
+    </GridItem>
+  </GridContainer>
     </div>
-    <div className="carousel-item">
-      <img src="http://iips.edu.in/images/events/stu.jpg" className="d-block w-100" alt="..." />
-      <div className="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div className="carousel-item">
-      <img src="http://iips.edu.in/images/events/iips_placement.jpg" className="d-block w-100" alt="..." />
-      <div className="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
-    );
+);
 }
 export default SliderComponent;

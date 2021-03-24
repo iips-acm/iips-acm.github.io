@@ -15,12 +15,8 @@ import Button from "components/CustomButtons/Button.js";
 import Parallax from "components/Parallax/Parallax.js";
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
-
-
 import styles from "assets/jss/material-kit-react/views/components.js";
-
 const useStyles = makeStyles(styles);
-
 export default function About(props) {
   const classes = useStyles();
   const { ...rest } = props;
