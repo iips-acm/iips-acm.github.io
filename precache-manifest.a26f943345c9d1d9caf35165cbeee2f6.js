@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bf42daa7fc6f5f39a22421045133c2d8",
+    "revision": "46a6227593385e5c878f82a359081260",
     "url": "/index.html"
   },
   {
-    "revision": "6b1703d167758e17c3c8",
-    "url": "/static/css/main.4226bcb6.chunk.css"
+    "revision": "de464787a19e0d46b91b",
+    "url": "/static/css/main.b85cbc3f.chunk.css"
   },
   {
-    "revision": "fc450d76d3e44efdc7e9",
-    "url": "/static/js/2.b6a469ad.chunk.js"
+    "revision": "6c93c31d1f11f4c752a4",
+    "url": "/static/js/2.5f22c5ca.chunk.js"
   },
   {
     "revision": "b82673e14a58a1f12df69f9a27b74723",
-    "url": "/static/js/2.b6a469ad.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.5f22c5ca.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6b1703d167758e17c3c8",
-    "url": "/static/js/main.774b674b.chunk.js"
+    "revision": "de464787a19e0d46b91b",
+    "url": "/static/js/main.80deda0f.chunk.js"
   },
   {
     "revision": "123933404fb33b23555b",
     "url": "/static/js/runtime-main.16a0e446.js"
+  },
+  {
+    "revision": "3c50a5b014b28f34ac521a0698d3bf24",
+    "url": "/static/media/ShaligramPrajapatSir.3c50a5b0.jpg"
   },
   {
     "revision": "f1d71f777331fd7e3de116edf4ee3b67",
