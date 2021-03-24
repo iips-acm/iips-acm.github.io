@@ -21,45 +21,67 @@ import Button from "components/CustomButtons/Button.js";
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
 
 const useStyles = makeStyles(styles);
-import './HeaderLinks.css'
+import "./HeaderLinks.css";
 export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Link className="navlinks" to="/">
-          <Button color="transparent" className={classes.navLink} style={{fontSize:18}}>
+          <Button
+            color="transparent"
+            className={classes.navLink}
+            style={{ fontSize: 18 }}
+          >
             Home
           </Button>
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Link className="navlinks" to="/about">
-          <Button color="transparent" className={classes.navLink} style={{fontSize:18}}>
+          <Button
+            color="transparent"
+            className={classes.navLink}
+            style={{ fontSize: 18 }}
+          >
             About
           </Button>
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Link className="navlinks" to="/events">
-          <Button color="transparent" className={classes.navLink} style={{fontSize:18}}>
+          <Button
+            color="transparent"
+            className={classes.navLink}
+            style={{ fontSize: 18 }}
+          >
             Events
           </Button>
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
         <Link className="navlinks" to="/codeofconduct">
-          <Button color="transparent" className={classes.navLink} style={{fontSize:18}}>
+          <Button
+            color="transparent"
+            className={classes.navLink}
+            style={{ fontSize: 18 }}
+          >
             Code of conduct
           </Button>
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link className="navlinks" to="/github">
-          <Button color="transparent" className={classes.navLink} style={{fontSize:18}}>
+      <span className="navlinks" >
+          <a
+            color="transparent"
+            className={classes.navLink}
+            style={{ fontSize: 18 }}
+            target="_blank"
+            href="https://github.com/iips-acm"
+          >
             Github
-          </Button>
-        </Link>
+          </a>
+        </span>
       </ListItem>
     </List>
   );
