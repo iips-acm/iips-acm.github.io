@@ -25,10 +25,15 @@ import "./HeaderLinks.css";
 export default function HeaderLinks(props) {
   const classes = useStyles();
   const gotoSection = (id) => {
-    const temp_id = "#" + id;
-    $('html, body').animate({
-      scrollTop: $(temp_id).offset().top
-    }, 1500);
+    if (document.getElementById(id)) {
+      const temp_id = "#" + id;
+      $('html, body').animate({
+        scrollTop: $(temp_id).offset().top
+      }, 1500);
+    } else {
+      window.open('/', '_self')
+    }
+    
   }
   
   return (
