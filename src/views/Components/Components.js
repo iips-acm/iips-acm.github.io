@@ -46,7 +46,7 @@ export default function Components(props) {
         color="transparent"
         {...rest}
       />
-    <div style={{ position:'relative', backgroundColor: "#00091B", color: "white" ,height:"150vh" }}>
+    <div style={{ position:'relative', backgroundColor: "#00091B", color: "white" ,height:"100%" }}>
     <div className={classes.container}>
     <SliderComponent />
     <AboutComponent />
