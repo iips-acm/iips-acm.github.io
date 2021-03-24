@@ -19,15 +19,24 @@ import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
-
+import $ from 'jquery';
 const useStyles = makeStyles(styles);
 import "./HeaderLinks.css";
 export default function HeaderLinks(props) {
   const classes = useStyles();
+  const gotoSection = (id) => {
+    const temp_id = "#" + id;
+    $('html, body').animate({
+      scrollTop: $(temp_id).offset().top
+    }, 1500);
+  }
+  
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <Link className="navlinks" to="/">
+        <Link className="navlinks" to="/"onClick={() => {
+          gotoSection('home');
+        }}>
           <Button
             color="transparent"
             className={classes.navLink}
@@ -38,7 +47,9 @@ export default function HeaderLinks(props) {
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link className="navlinks" to="/about">
+        <Link className="navlinks"  onClick={() => {
+          gotoSection('about');
+        }}>
           <Button
             color="transparent"
             className={classes.navLink}
@@ -49,7 +60,22 @@ export default function HeaderLinks(props) {
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link className="navlinks" to="/events">
+        <Link className="navlinks" onClick={() => {
+          gotoSection('team');
+        }}>
+          <Button
+            color="transparent"
+            className={classes.navLink}
+            style={{ fontSize: 18 }}
+          >
+            Team
+          </Button>
+        </Link>
+      </ListItem>
+      {/* <ListItem className={classes.listItem}>
+        <Link className="navlinks" onClick={() => {
+          gotoSection('events');
+        }}>
           <Button
             color="transparent"
             className={classes.navLink}
@@ -58,7 +84,7 @@ export default function HeaderLinks(props) {
             Events
           </Button>
         </Link>
-      </ListItem>
+      </ListItem> */}
       <ListItem className={classes.listItem}>
         <Link className="navlinks" to="/codeofconduct">
           <Button

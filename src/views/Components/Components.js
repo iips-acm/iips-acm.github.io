@@ -31,12 +31,44 @@ import SliderComponent from "../../components/Slider/SliderComponent.js";
 import styles from "assets/jss/material-kit-react/views/components.js";
 import TeamsComponent from "../../components/Teams/TeamsComponent";
 import AboutComponent from "../../components/AboutComponent/AboutComponent";
-
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import $ from 'jquery';
+import '../../App.css';
 const useStyles = makeStyles(styles);
 
 export default function Components(props) {
   const classes = useStyles();
   const { ...rest } = props;
+  $(document).ready(function() {
+    /******************************
+     BOTTOM SCROLL TOP BUTTON
+     ******************************/
+
+        // declare variable
+    var scrollTop = $(".scrollTop");
+
+    $(window).scroll(function () {
+      // declare variable
+      var topPos = $(this).scrollTop();
+
+      // if user scrolls down - show scroll to top button
+      if (topPos > 100) {
+        $(scrollTop).css("opacity", "1");
+
+      } else {
+        $(scrollTop).css("opacity", "0");
+      }
+
+    }); // scroll END
+
+    //Click event to scroll to top
+    $(scrollTop).on('click', function () {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 800);
+      return false;
+    });
+  });
   return (
     <div style={{ backgroundColor: "#00091B", color: "white" }}>
       <Header
@@ -54,6 +86,9 @@ export default function Components(props) {
     </div>
     </div>
       <Footer fixed />
+      <div id="stop" className="scrollTop">
+        <ExpandLessIcon  />
+      </div>
     </div>
   );
 }

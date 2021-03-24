@@ -27,7 +27,7 @@ export default function TeamSection() {
     classes.imgFluid
   );
   return (
-    <div className={classes.section} style={{color:"white"}}>
+    <div className={classes.section} style={{color:"white"}} id='team'>
     <h2 className={classes.title}>Here is our team</h2>
     <div>
       <GridContainer>

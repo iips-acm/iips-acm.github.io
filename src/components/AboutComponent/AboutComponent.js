@@ -31,6 +31,7 @@ export default function CodeOfConduct(props) {
           backgroundColor: "#00091B",
           color: "white",
         }}
+        id="about"
       > 
           <h3>
             <b>ABOUT ACM</b>

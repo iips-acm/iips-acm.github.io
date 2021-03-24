@@ -21,7 +21,7 @@ const settings = {
 };
 return (
   
-    <div className={classes.container}>
+    <div className={classes.container} id="home">
       <GridContainer>
     <GridItem xs={12} sm={12} md={12}>
       <Card>
