@@ -52,9 +52,10 @@ export default function Components(props) {
       // if user scrolls down - show scroll to top button
       if (topPos > 100) {
         $(scrollTop).css("opacity", "1");
-
+        $('#myheader').attr('style', 'background-color: #00091b !important; z-index: 10000');
       } else {
         $(scrollTop).css("opacity", "0");
+        $('#myheader').attr('style', 'background-color: transparent !important; z-index: 10000');
       }
 
     }); // scroll END
@@ -69,23 +70,25 @@ export default function Components(props) {
   });
   return (
     <div style={{ backgroundColor: "#00091B", color: "white" }}>
+      <Header
+          style={{position:'fixed',top:0}}
+          brand="IIPS ACM CHAPTER "
+          rightLinks={<HeaderLinks />}
+          color="transparent"
+          {...rest}
+      />
       <div id={'jumbotron'} style={{
         width: '100%',
-        height: window.innerHeight
+        height: window.innerHeight,
+        marginTop: -105
       }}>
-        <Header
-            style={{position:'fixed',top:0}}
-            brand="IIPS ACM CHAPTER "
-            rightLinks={<HeaderLinks />}
-            color="transparent"
-            {...rest}
-        />
         <div style={{
           justifyContent: "center",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          height: window.innerHeight - 200
+          // height: window.innerHeight - 200
+          height: '100%'
         }}>
           <h1 className={'welcomeText'}>Welcome to ACM Chapter</h1>
           <h1 className={'welcomeText1'}>IIPS DAVV, Indore</h1>

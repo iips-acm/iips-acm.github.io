@@ -40,7 +40,7 @@ export default function HeaderLinks(props) {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Link className="navlinks" to="/"onClick={() => {
-          gotoSection('home');
+          gotoSection('jumbotron');
         }}>
           <Button
             color="transparent"

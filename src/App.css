@@ -119,6 +119,12 @@
     }
 }
 
+header {
+    position: sticky !important;
+    /*top: 10px;*/
+    z-index: 10000;
+}
+
 .welcomeText {
     font-weight: bold;
     font-size: 80px;

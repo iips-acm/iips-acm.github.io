@@ -61,8 +61,13 @@ export default function Header(props) {
     [classes.fixed]: fixed
   });
   const brandComponent = <Button className={classes.title}>{brand}</Button>;
+
   return (
-    <AppBar className={appBarClasses} id={'myheader'}>
+    <AppBar className={appBarClasses} id={'myheader'} style={{
+      position: 'sticky',
+      top: 10,
+      zIndex: 100000,
+    }}>
       <Toolbar className={classes.container}>
         {leftLinks !== undefined ? brandComponent : null}
         <div className={classes.flex}>
