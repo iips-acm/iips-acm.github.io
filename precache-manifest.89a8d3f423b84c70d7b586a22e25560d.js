@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "25aee4dc06fa95172ad877400ae56a8b",
+    "revision": "889f0d059cb7796c22f9397cd498b5ec",
     "url": "/index.html"
   },
   {
-    "revision": "572f74fcad6fd8531338",
+    "revision": "1abc43a71066a055c38b",
     "url": "/static/css/main.e2fd95bc.chunk.css"
   },
   {
-    "revision": "2375d86ab268244febe9",
-    "url": "/static/js/2.59e2c42d.chunk.js"
+    "revision": "b014dbfe81883f3ad47b",
+    "url": "/static/js/2.681d9543.chunk.js"
   },
   {
     "revision": "9aaceaf37e9fff66b8cca450d0c9d6e4",
-    "url": "/static/js/2.59e2c42d.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.681d9543.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "572f74fcad6fd8531338",
-    "url": "/static/js/main.5b8613ba.chunk.js"
+    "revision": "1abc43a71066a055c38b",
+    "url": "/static/js/main.771efe95.chunk.js"
   },
   {
     "revision": "123933404fb33b23555b",
     "url": "/static/js/runtime-main.16a0e446.js"
   },
   {
-    "revision": "3c50a5b014b28f34ac521a0698d3bf24",
-    "url": "/static/media/ShaligramPrajapatSir.3c50a5b0.jpg"
+    "revision": "3cd4cfe99a921a87f5db26addb178ef8",
+    "url": "/static/media/ShaligramPrajapatSir.3cd4cfe9.jpeg"
   },
   {
     "revision": "f1d71f777331fd7e3de116edf4ee3b67",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "08e18cb904f0f3c6dd9e3d4ed72e0eca",
     "url": "/static/media/landing.08e18cb9.jpg"
+  },
+  {
+    "revision": "34d4838ba2e5e5b7b652fbbc8c490c0f",
+    "url": "/static/media/nitinNagarSir.34d4838b.jpeg"
   },
   {
     "revision": "090a5aabae505f67ee0981613d02ee05",
