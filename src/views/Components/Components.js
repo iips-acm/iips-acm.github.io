@@ -32,6 +32,7 @@ import styles from "assets/jss/material-kit-react/views/components.js";
 import TeamsComponent from "../../components/Teams/TeamsComponent";
 import AboutComponent from "../../components/AboutComponent/AboutComponent";
 import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import $ from 'jquery';
 import '../../App.css';
 import Contact from "../Contact/Contact";
@@ -41,10 +42,6 @@ export default function Components(props) {
   const classes = useStyles();
   const { ...rest } = props;
   $(document).ready(function() {
-    /******************************
-     BOTTOM SCROLL TOP BUTTON
-     ******************************/
-
         // declare variable
     var scrollTop = $(".scrollTop");
 
@@ -72,13 +69,37 @@ export default function Components(props) {
   });
   return (
     <div style={{ backgroundColor: "#00091B", color: "white" }}>
-      <Header
-        style={{position:'fixed',top:0}}
-        brand="IIPS ACM CHAPTER "
-        rightLinks={<HeaderLinks />}
-        color="transparent"
-        {...rest}
-      />
+      <div id={'jumbotron'} style={{
+        width: '100%',
+        height: window.innerHeight
+      }}>
+        <Header
+            style={{position:'fixed',top:0}}
+            brand="IIPS ACM CHAPTER "
+            rightLinks={<HeaderLinks />}
+            color="transparent"
+            {...rest}
+        />
+        <div style={{
+          justifyContent: "center",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          height: window.innerHeight - 200
+        }}>
+          <h1 className={'welcomeText'}>Welcome to ACM Chapter</h1>
+          <h1 className={'welcomeText1'}>IIPS DAVV, Indore</h1>
+        </div>
+        <KeyboardArrowDownIcon className={'down-arrow'} style={{
+          fontSize: 70
+        }}
+        onClick={() => {
+          $('html, body').animate({
+            scrollTop: $('#home').offset().top
+          }, 1500);
+        }}
+        />
+      </div>
     <div style={{ position:'relative', backgroundColor: "#00091B", color: "white" ,height:"100%" }}>
     <div className={classes.container}>
     <SliderComponent />

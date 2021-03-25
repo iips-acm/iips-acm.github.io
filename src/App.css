@@ -14,40 +14,129 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-  }
-  .scrollTop a {
+}
+
+.scrollTop a {
     /* font-size: 18px; */
     color: #fff;
-  }
+}
 
-  #bootstrapForm input {
-      background: transparent;
-      width: 100%;
-      height: 30px;
-      color: #fff;
-      border: none;
-  }
+#bootstrapForm input {
+    background: transparent;
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    border: none;
+}
 
-    #bootstrapForm textarea {
-        background: transparent;
-        width: 100%;
-        height: 100px;
-        color: #fff;
-        border: none;
+#bootstrapForm textarea {
+    background: transparent;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    border: none;
+}
+
+#bootstrapForm #heading {
+    border: none;
+}
+
+#h1_heading {
+    font-weight: bold !important;
+    /*text-align: center !important;*/
+}
+
+#btnSubmit {
+    background: transparent !important;
+    border-radius: 100px !important;
+    width: 180px !important;
+    height: 40px !important;
+    border: 1px solid !important;
+}
+
+.down-arrow {
+    cursor: pointer;
+    height: 60px;
+    width: 80px;
+    margin: 0px 0 0 -40px;
+    line-height: 60px;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    color: #FFF;
+    text-align: center;
+    font-size: 70px;
+    z-index: 100;
+    text-decoration: none;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+
+    -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+    -moz-animation: ca3_fade_move_down 2s ease-in-out infinite;
+    animation: ca3_fade_move_down 2s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes ca3_fade_move_down {
+    0% {
+        -webkit-transform: translate(0, -20px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(0, 20px);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes ca3_fade_move_down {
+    0% {
+        -moz-transform: translate(0, -20px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -moz-transform: translate(0, 20px);
+        opacity: 0;
+    }
+}
+
+@keyframes ca3_fade_move_down {
+    0% {
+        transform: translate(0, -20px);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0, 20px);
+        opacity: 0;
+    }
+}
+
+.welcomeText {
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+}
+
+.welcomeText1 {
+    font-weight: bold;
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    .welcomeText {
+        font-weight: bold;
+        font-size: 40px;
     }
 
-    #bootstrapForm #heading {
-        border: none;
+    .welcomeText1 {
+        font-weight: bold;
+        font-size: 30px;
     }
-    #h1_heading {
-        font-weight: bold !important;
-        /*text-align: center !important;*/
-    }
-    #btnSubmit {
-        background: transparent !important;
-        border-radius: 100px !important;
-        width: 180px !important;
-        height: 40px !important;
-        border: 1px solid !important;
-    }
-
+}
