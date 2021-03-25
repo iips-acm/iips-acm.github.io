@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.14e06d68.chunk.css",
-    "main.js": "/static/js/main.bf585920.chunk.js",
-    "main.js.map": "/static/js/main.bf585920.chunk.js.map",
+    "main.css": "/static/css/main.e2fd95bc.chunk.css",
+    "main.js": "/static/js/main.86cea0de.chunk.js",
+    "main.js.map": "/static/js/main.86cea0de.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.16a0e446.js",
     "runtime-main.js.map": "/static/js/runtime-main.16a0e446.js.map",
-    "static/js/2.5839c5d2.chunk.js": "/static/js/2.5839c5d2.chunk.js",
-    "static/js/2.5839c5d2.chunk.js.map": "/static/js/2.5839c5d2.chunk.js.map",
+    "static/js/2.31cf521b.chunk.js": "/static/js/2.31cf521b.chunk.js",
+    "static/js/2.31cf521b.chunk.js.map": "/static/js/2.31cf521b.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.e0c3b98d567fe722a68b9852fad2ee17.js": "/precache-manifest.e0c3b98d567fe722a68b9852fad2ee17.js",
+    "precache-manifest.7951b8d25ad1bfe715c69069c6ea4979.js": "/precache-manifest.7951b8d25ad1bfe715c69069c6ea4979.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.14e06d68.chunk.css.map": "/static/css/main.14e06d68.chunk.css.map",
-    "static/js/2.5839c5d2.chunk.js.LICENSE.txt": "/static/js/2.5839c5d2.chunk.js.LICENSE.txt",
+    "static/css/main.e2fd95bc.chunk.css.map": "/static/css/main.e2fd95bc.chunk.css.map",
+    "static/js/2.31cf521b.chunk.js.LICENSE.txt": "/static/js/2.31cf521b.chunk.js.LICENSE.txt",
+    "static/media/DeepakJoshi.jpeg": "/static/media/DeepakJoshi.8f99f450.jpeg",
+    "static/media/GopalOswal.jpeg": "/static/media/GopalOswal.b8645220.jpeg",
+    "static/media/ManishaSahu.jpg": "/static/media/ManishaSahu.98dfe3de.jpg",
     "static/media/ShaligramPrajapatSir.jpeg": "/static/media/ShaligramPrajapatSir.3cd4cfe9.jpeg",
+    "static/media/YashiRathore.jpg": "/static/media/YashiRathore.7b5e4408.jpg",
     "static/media/avatar.jpg": "/static/media/avatar.f1d71f77.jpg",
     "static/media/bg.jpg": "/static/media/bg.e5241971.jpg",
     "static/media/bg2.jpg": "/static/media/bg2.84378183.jpg",
@@ -23,12 +27,13 @@
     "static/media/sign.jpg": "/static/media/sign.cf8b686b.jpg",
     "static/media/slider1.jpg": "/static/media/slider1.b93656e4.jpg",
     "static/media/slider2.jpg": "/static/media/slider2.15e0477e.jpg",
-    "static/media/slider3.jpg": "/static/media/slider3.0082315e.jpg"
+    "static/media/slider3.jpg": "/static/media/slider3.0082315e.jpg",
+    "static/media/tarun.jpeg": "/static/media/tarun.05741d15.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.16a0e446.js",
-    "static/js/2.5839c5d2.chunk.js",
-    "static/css/main.14e06d68.chunk.css",
-    "static/js/main.bf585920.chunk.js"
+    "static/js/2.31cf521b.chunk.js",
+    "static/css/main.e2fd95bc.chunk.css",
+    "static/js/main.86cea0de.chunk.js"
   ]
 }
