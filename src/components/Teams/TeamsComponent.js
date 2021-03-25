@@ -56,34 +56,59 @@ export default function TeamSection() {
                                     <CardFooter className={classes.justifyCenter} style={{
                                         padding: 0
                                     }}>
-                                        <Button
-                                            justIcon
-                                            color="transparent"
-                                            className={classes.margin5}
-                                        >
-                                            <i className={classes.socials + " fas fa-envelope"}/>
+                                        {
+                                            data.social.gmail && (
+                                                <Button
+                                                    justIcon
+                                                    color="transparent"
+                                                    className={classes.margin5}
+                                                    onClick={() => {
+                                                        window.open(data.social.gmail)
+                                                    }}
+                                                >
+                                                    <i className={classes.socials + " fas fa-envelope"}/>
+                                                </Button>
+                                            )
+                                        }
+                                        {
+                                            data.social.linkedin && (
+                                            <Button
+                                                justIcon
+                                                color="transparent"
+                                                className={classes.margin5}
+                                                onClick={() => {
+                                                    window.open(data.social.linkedin);
+                                                }}
+                                            >
+                                                <i className={classes.socials + " fab fa-linkedin"}/>
+                                            </Button>
+                                        )}
+                                        {
+                                            data.social.github && (
+                                            <Button
+                                                justIcon
+                                                color="transparent"
+                                                className={classes.margin5}
+                                                onClick={() => {
+                                                    window.open(data.social.github);
+                                                }}
+                                            >
+                                                <i className={classes.socials + " fab fa-github"}/>
                                         </Button>
-                                        <Button
-                                            justIcon
-                                            color="transparent"
-                                            className={classes.margin5}
-                                        >
-                                            <i className={classes.socials + " fab fa-linkedin"}/>
-                                        </Button>
-                                        <Button
-                                            justIcon
-                                            color="transparent"
-                                            className={classes.margin5}
-                                        >
-                                            <i className={classes.socials + " fab fa-github"}/>
-                                        </Button>
-                                        <Button
-                                            justIcon
-                                            color="transparent"
-                                            className={classes.margin5}
-                                        >
-                                            <i className={classes.socials + " fas fa-link"}/>
-                                        </Button>
+                                            )}
+                                        {
+                                            data.social.website && (
+                                            <Button
+                                                justIcon
+                                                color="transparent"
+                                                className={classes.margin5}
+                                                onClick={() => {
+                                                    window.open(data.social.website);
+                                                }}
+                                            >
+                                                <i className={classes.socials + " fas fa-link"}/>
+                                            </Button>
+                                            )}
                                     </CardFooter>
                                 </Card>
                             </GridItem>
