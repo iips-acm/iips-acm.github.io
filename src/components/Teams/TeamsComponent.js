@@ -41,8 +41,8 @@ export default function TeamSection() {
                                         <img src={data.image} alt="..."
                                              style={{
                                                  width: 200,
-                                                 height: 230,
-                                                 borderRadius: 5,
+                                                 height: 200,
+                                                 borderRadius: 100,
                                                  borderWidth: 5,
                                                  borderColor: '#fff',
                                                  borderStyle: 'solid'

@@ -4,7 +4,7 @@ export const teams = [
     "post": "Faculty Advisor",
     image: require('../assets/img/faces/ShaligramPrajapatSir.jpeg'),
     social: {
-      gmail: '',
+      gmail: 'shalligram.prajapat@gmail.com',
       linkedin: 'https://www.linkedin.com/in/shaligramprajapat8iips/',
       github: '',
       website: 'https://sites.google.com/site/shaligramiipsdavvindore/',
@@ -79,7 +79,7 @@ export const teams = [
   {
     "name": "Manisha Sahu",
     "post": "Student Member",
-    image: require('../assets/img/faces/ManishaSahu.jpg'),
+    image: require('../assets/img/faces/ManishaSahu.jpeg'),
     social: {
       gmail: 'mailto:sahumanisha115@gmail.com',
       linkedin: 'https://www.linkedin.com/in/manisha-sahu-bab63a198/',
