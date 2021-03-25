@@ -31,7 +31,13 @@ export default function HeaderLinks(props) {
         scrollTop: $(temp_id).offset().top
       }, 1500);
     } else {
-      window.open('/', '_self')
+      window.open('/', '_self');
+        const temp_id = "#" + id;
+        setTimeout(() => {
+            $('html, body').animate({
+                scrollTop: $(temp_id).offset().top
+            }, 1500);
+        }, 1000);
     }
 
   }
