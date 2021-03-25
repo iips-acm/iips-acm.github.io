@@ -8,6 +8,9 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 import styles from "assets/jss/material-kit-react/views/components.js";
+import slider1 from './slider1.jpg';
+import slider2 from './slider2.jpg';
+import slider3 from './slider3.jpg';
 const useStyles = makeStyles(styles);
 const SliderComponent = () => {
   const classes = useStyles();
@@ -20,7 +23,7 @@ const settings = {
   autoplay: true
 };
 return (
-  
+
     <div className={classes.container} id="home">
       <GridContainer>
     <GridItem xs={12} sm={12} md={12}>
@@ -28,7 +31,7 @@ return (
         <Carousel {...settings}>
           <div>
             <img
-              src="http://iips.edu.in/images/slider/slider2.jpg" 
+              src={slider1}
               alt="First slide"
               className="slick-image"
             />
@@ -41,7 +44,7 @@ return (
           </div>
           <div>
             <img
-              src="http://iips.edu.in/images/events/stu.jpg"
+              src={slider2}
               alt="Second slide"
               className="slick-image"
             />
@@ -54,7 +57,7 @@ return (
           </div>
           <div>
             <img
-              src="http://iips.edu.in/images/events/iips_placement.jpg"
+              src={slider3}
               alt="Third slide"
               className="slick-image"
             />
