@@ -22,25 +22,36 @@ export const teams = [
     }
   },
   {
-    "name": "Adeen Shukla",
-    "post": "Student Member",
-    image: 'https://adeen.me/profile.jpeg',
-    social: {
-      gmail: 'mailto:adeen@adeen.me',
-      linkedin: 'https://linkedin.com/in/adeen-s',
-      github: 'https://github.com/adeen-s',
-      website: 'https://adeen.me/',
-    }
-  },
-  {
     "name": "Deepak Joshi",
-    "post": "Student Member",
+    "post": "President",
     image: require('../assets/img/faces/DeepakJoshi.jpeg'),
     social: {
       gmail: 'mailto:joshideepak4598@gmail.com',
       linkedin: 'https://www.linkedin.com/in/deepakjoshipro/',
       github: 'https://github.com/deepak-pro/',
       website: 'http://deepakjoshi.me/',
+    }
+  },
+  {
+    "name": "Gopal Oswal",
+    "post": "Vice President",
+    image: require('../assets/img/faces/GopalOswal.jpeg'),
+    social: {
+      gmail: 'mailto:gploswal@gmail.com',
+      linkedin: 'https://www.linkedin.com/in/oswalgopal/',
+      github: 'https://github.com/oswalgopal',
+      website: 'http://oswalgopal.github.io/',
+    }
+  },
+  {
+    "name": "Adeen Shukla",
+    "post": "Treasurer",
+    image: 'https://adeen.me/profile.jpeg',
+    social: {
+      gmail: 'mailto:adeen@adeen.me',
+      linkedin: 'https://linkedin.com/in/adeen-s',
+      github: 'https://github.com/adeen-s',
+      website: 'https://adeen.me/',
     }
   },
   {
@@ -52,17 +63,6 @@ export const teams = [
       linkedin: 'https://www.linkedin.com/in/ankur-barve29',
       github: 'https://github.com/ankur-b',
       website: 'https://archman.tech/',
-    }
-  },
-  {
-    "name": "Gopal Oswal",
-    "post": "Student Member",
-    image: require('../assets/img/faces/GopalOswal.jpeg'),
-    social: {
-      gmail: 'mailto:gploswal@gmail.com',
-      linkedin: 'https://www.linkedin.com/in/oswalgopal/',
-      github: 'https://github.com/oswalgopal',
-      website: 'http://oswalgopal.github.io/',
     }
   },
   {
@@ -84,7 +84,7 @@ export const teams = [
       gmail: 'mailto:sahumanisha115@gmail.com',
       linkedin: 'https://www.linkedin.com/in/manisha-sahu-bab63a198/',
       github: 'https://github.com/prettyquail',
-      website: '',
+      website: 'https://manishawebsite.netlify.app/',
     }
   },
   {
