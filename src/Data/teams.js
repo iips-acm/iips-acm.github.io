@@ -23,7 +23,7 @@ export const teams = [
   },
   {
     "name": "Deepak Joshi",
-    "post": "President",
+    "post": "Chair",
     image: require('../assets/img/faces/DeepakJoshi.jpeg'),
     social: {
       gmail: 'mailto:joshideepak4598@gmail.com',
@@ -34,7 +34,7 @@ export const teams = [
   },
   {
     "name": "Gopal Oswal",
-    "post": "Vice President",
+    "post": "Vice Chair",
     image: require('../assets/img/faces/GopalOswal.jpeg'),
     social: {
       gmail: 'mailto:gploswal@gmail.com',
