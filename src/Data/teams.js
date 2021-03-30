@@ -4,7 +4,7 @@ export const teams = [
     "post": "Faculty Advisor",
     image: require('../assets/img/faces/ShaligramPrajapatSir.jpeg'),
     social: {
-      gmail: 'shalligram.prajapat@gmail.com',
+      gmail: 'mailto:shalligram.prajapat@gmail.com',
       linkedin: 'https://www.linkedin.com/in/shaligramprajapat8iips/',
       github: '',
       website: 'https://sites.google.com/site/shaligramiipsdavvindore/',
