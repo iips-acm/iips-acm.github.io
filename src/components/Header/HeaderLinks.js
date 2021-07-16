@@ -83,9 +83,9 @@ export default function HeaderLinks(props) {
           </Button>
         </Link>
       </ListItem>
-      {/* <ListItem className={classes.listItem}>
-        <Link className="navlinks" onClick={() => {
-          gotoSection('events');
+      <ListItem className={classes.listItem}>
+        <Link className="navlinks" to="/events" onClick={() => {
+          // gotoSection('events');
         }}>
           <Button
             color="transparent"
@@ -95,7 +95,7 @@ export default function HeaderLinks(props) {
             Events
           </Button>
         </Link>
-      </ListItem> */}
+      </ListItem>
          <ListItem className={classes.listItem}>
         <Link className="navlinks" onClick={() => {
           gotoSection('contact');
