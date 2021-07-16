@@ -30,10 +30,11 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import { func } from "prop-types";
-
+import Modal from "@material-ui/core/Modal";
+import { blue } from "@material-ui/core/colors";
 // console.log(events);
 
-const useStyles = makeStyles(styles);
+// const useStyles = makeStyles(styles);
 
 // console.log(date);
 export default function Events(props) {
@@ -42,10 +43,40 @@ export default function Events(props) {
   const [mins, setMins] = React.useState(0);
   const [sec, setSec] = React.useState(0);
   const [upcomingTimer, setUpcomingTimer] = React.useState();
-  const classes = useStyles();
   const [upcomingEvents, setUpcomingEvents] = React.useState();
   const [pastEvents, setPastEvents] = React.useState();
+  const [open, setOpen] = React.useState(false);
 
+  const useStyles = makeStyles((theme) => ({
+    paper: {
+      position: "absolute",
+      
+      backgroundColor: theme.palette.background.paper,
+      border: "2px solid #000",
+      boxShadow: theme.shadows[5],
+      // overflowX: "scroll",
+      maxHeight: 600,
+      zIndex: 10,
+      padding: theme.spacing(2, 2, 1),
+      width: "85%",
+      [theme.breakpoints.up("md")]: {
+        width: "40%",
+      },
+    },
+  }));
+  function getModalStyle() {
+    const top = 50;
+    const left = 50;
+
+    return {
+      top: `${top}%`,
+      left: `${left}%`,
+
+      transform: `translate(-${top}%, -${left}%)`,
+    };
+  }
+  const [modalStyle] = React.useState(getModalStyle);
+  const classes = useStyles();
   const date = new Date("2021", "07", "08");
   React.useEffect(() => {
     const data = events.filter((item) => item.eventStatus == "upcoming");
@@ -64,6 +95,18 @@ export default function Events(props) {
     }, 1000);
   }, []);
 
+  const [modalContent, setModalContent] = React.useState();
+
+  const handleOpen = (item) => {
+    setModalContent(item);
+    
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   const { ...rest } = props;
   return (
     <div
@@ -72,6 +115,7 @@ export default function Events(props) {
         color: "white",
         height: "100vh",
         // marginBottom: "5%",
+        filter: `${open ? "blur(5px)" : ""}`,
       }}
     >
       <Header
@@ -191,7 +235,9 @@ export default function Events(props) {
             <table style={{ width: "100%" }}>
               <thead>
                 <th style={{ width: "5%" }}>#</th>
-                <th style={{ width: "40%" }}>Event</th>
+                <th onClick={handleOpen} style={{ width: "40%" }}>
+                  Event
+                </th>
                 <th style={{ width: "27.5%" }}>Date</th>
                 <th style={{ width: "27.5%" }}>Location</th>
               </thead>
@@ -200,7 +246,15 @@ export default function Events(props) {
                 {upcomingEvents?.map((item, i) => (
                   <tr>
                     <td>{i + 1}</td>
-                    <td>{item.title}</td>
+                    <td
+                      style={{
+                        textDecoration: "underline",
+                        marginBottom: "1px",
+                      }}
+                      onClick={() => handleOpen(item)}
+                    >
+                      {item.title}
+                    </td>
                     <td>{item.date}</td>
                     <td>{item.location}</td>
                   </tr>
@@ -224,7 +278,15 @@ export default function Events(props) {
                 {pastEvents?.map((item, i) => (
                   <tr>
                     <td>{i + 1}</td>
-                    <td>{item.title}</td>
+                    <td
+                      style={{
+                        textDecoration: "underline",
+                        marginBottom: "1px",
+                      }}
+                      onClick={() => handleOpen(item)}
+                    >
+                      {item.title}
+                    </td>
                     <td>{item.date}</td>
                     <td>{item.location}</td>
                   </tr>
@@ -236,6 +298,43 @@ export default function Events(props) {
         <br />
         <Footer fixed />
       </div>
+      {/* modal */}
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="simple-modal-title"
+        aria-describedby="simple-modal-description"
+      >
+        <div style={modalStyle} className={classes.paper}>
+          <img src={modalContent?.poster} width="100%" />
+          <h3>
+            <b>{modalContent?.title}</b>
+          </h3>
+          <p>{modalContent?.description}</p>
+          <h5>Speaker : {modalContent?.speaker}</h5>
+
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <Button
+              style={{ margin: "1%", background: "red", color: "white" }}
+              onClick={handleClose}
+              variant="contained"
+              target="_blank"
+              href={`${modalContent?.registrationLink}`}
+              // color="secondary"
+            >
+              Register
+            </Button>
+            <Button
+              style={{ margin: "1%" }}
+              onClick={handleClose}
+              variant="contained"
+              color="primary"
+            >
+              Close
+            </Button>
+          </div>
+        </div>
+      </Modal>
       {/* <br/> */}
     </div>
   );
