@@ -235,7 +235,7 @@ export default function Events(props) {
             <table style={{ width: "100%" }}>
               <thead>
                 <th style={{ width: "5%" }}>#</th>
-                <th onClick={handleOpen} style={{ width: "40%" }}>
+                <th style={{ width: "40%" }}>
                   Event
                 </th>
                 <th style={{ width: "27.5%" }}>Date</th>
@@ -248,8 +248,9 @@ export default function Events(props) {
                     <td>{i + 1}</td>
                     <td
                       style={{
-                        textDecoration: "underline",
+                        fontWeight:500,
                         marginBottom: "1px",
+                        cursor:'pointer'
                       }}
                       onClick={() => handleOpen(item)}
                     >
@@ -306,7 +307,7 @@ export default function Events(props) {
         aria-describedby="simple-modal-description"
       >
         <div style={modalStyle} className={classes.paper}>
-          <img src={modalContent?.poster} width="100%" />
+          <img src={modalContent?.poster} style={{width:700,marginLeft:16,height:350}} />
           <h3>
             <b>{modalContent?.title}</b>
           </h3>
