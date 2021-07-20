@@ -307,7 +307,7 @@ export default function Events(props) {
         aria-describedby="simple-modal-description"
       >
         <div style={modalStyle} className={classes.paper}>
-          <img src={modalContent?.poster} style={{width:700,marginLeft:16,height:350}} />
+          <img src={modalContent?.poster} style={{width:"100%",height:350}} />
           <h3>
             <b>{modalContent?.title}</b>
           </h3>
