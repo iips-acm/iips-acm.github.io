@@ -57,7 +57,7 @@ export const teams = [
   {
     "name": "Ankur Barve",
     "post": "Student Member",
-    image: 'https://archman.tech/static/media/avatar.c60f54a2.jpg',
+    image: require('../assets/img/faces/AnkurBarve.jpg'),
     social: {
       gmail: 'mailto:ankurbarve29@gmail.com',
       linkedin: 'https://www.linkedin.com/in/ankur-barve29',
