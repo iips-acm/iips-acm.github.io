@@ -37,7 +37,7 @@ const Contact = () => {
                                 <legend htmlFor="230991238">Name</legend>
                                 <div className="form-group">
                                     <input id="2125832179" type="text" name="entry.2125832179"
-                                           className="form-control"/>
+                                           className="form-control" required/>
                                 </div>
                             </fieldset>
                         </Grid>
@@ -46,7 +46,7 @@ const Contact = () => {
                     <fieldset>
                         <legend htmlFor="402775779">Message</legend>
                         <div className="form-group">
-                            <textarea id="1611346208" name="entry.1611346208" className="form-control"></textarea>
+                            <textarea id="1611346208" name="entry.1611346208" className="form-control" required></textarea>
                         </div>
                     </fieldset>
                     <div style={{
