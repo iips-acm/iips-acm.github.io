@@ -3,21 +3,6 @@ import $ from 'jquery';
 import Grid from '@material-ui/core/Grid';
 
 const Contact = () => {
-    $('#bootstrapForm').submit(function (event) {
-        event.preventDefault()
-        var extraData = {}
-        $('#bootstrapForm').ajaxSubmit({
-            data: extraData,
-            dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
-            error: function () {
-                // Submit of form should be successful but JSONP callback will fail because Google Forms
-                // does not support it, so this is handled as a failure.
-                alert('Form Submitted. Thanks.')
-                // You can also redirect the user to a custom thank-you page:
-                // window.location = 'http://www.mydomain.com/thankyoupage.html'
-            }
-        })
-    })
     return (
         <div style={{
             display: 'flex',
@@ -28,10 +13,8 @@ const Contact = () => {
                 width: $(document).width() >= 768 ? '70%' : '100%'
             }}>
                 <form
-                    action="https://docs.google.com/forms/d/e/1FAIpQLSfjbCWcfNEnZO7hwyGQgYd94tHCifYqJtqHC9TiseFyyZXfuA/formResponse"
-                    target="_self"
-                    id="bootstrapForm"
-                    method="POST">
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSd2sbF3NQW8XQe5IwBQ1lFDgoXEL9jYb6Aicab9ruihNRsUXA/formResponse"
+                    id="bootstrapForm">
                     <fieldset id={'heading'}>
                         <h2 id={'h1_heading'}>Contact Us <br/><small></small></h2>
                     </fieldset>
@@ -42,7 +25,7 @@ const Contact = () => {
                             <fieldset>
                                 <legend htmlFor="">Email</legend>
                                 <div className="form-group">
-                                    <input id="emailAddress" type="email" name="emailAddress" className="form-control"
+                                    <input id="1196443819" type="email" name="entry.1196443819" className="form-control"
                                            required/>
                                 </div>
                             </fieldset>
@@ -53,7 +36,7 @@ const Contact = () => {
                             <fieldset>
                                 <legend htmlFor="230991238">Name</legend>
                                 <div className="form-group">
-                                    <input id="1181703993" type="text" name="entry.1181703993"
+                                    <input id="2125832179" type="text" name="entry.2125832179"
                                            className="form-control"/>
                                 </div>
                             </fieldset>
@@ -63,13 +46,9 @@ const Contact = () => {
                     <fieldset>
                         <legend htmlFor="402775779">Message</legend>
                         <div className="form-group">
-                            <textarea id="1427811954" name="entry.1427811954" className="form-control"></textarea>
+                            <textarea id="1611346208" name="entry.1611346208" className="form-control"></textarea>
                         </div>
                     </fieldset>
-
-                    <input type="hidden" name="fvv" value="1"/>
-                    <input type="hidden" name="fbzx" value="8444327025892451972"/>
-                    <input type="hidden" name="pageHistory" value="0"/>
                     <div style={{
                         display: 'flex',
                         justifyContent: 'center',

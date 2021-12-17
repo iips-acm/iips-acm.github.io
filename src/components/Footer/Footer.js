@@ -31,20 +31,7 @@ export default function Footer(props) {
       <div className={classes.container}>
         <div
           className={classes.center}
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            letterSpacing: 2,
-            alignItems: "center",
-          }}
         >
-          <a
-            href="mailto:acmchapterofficer@iips.edu.in"
-            style={{ color: "#fff" }}
-          >
-            {" "}
-            <i class="far fa-envelope"></i> acmchapterofficer@iips.edu.in
-          </a>
           <p>ACM Student Chapter - IIPS(DAVV) · © 2021</p>
         </div>
       </div>
