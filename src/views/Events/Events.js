@@ -77,7 +77,7 @@ export default function Events(props) {
   }
   const [modalStyle] = React.useState(getModalStyle);
   const classes = useStyles();
-  const date = new Date("2021", "07", "08");
+  const date = new Date("2021", "11", "26");
   React.useEffect(() => {
     const data = events.filter((item) => item.eventStatus == "upcoming");
     setUpcomingEvents(data);
