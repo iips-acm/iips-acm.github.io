@@ -20,16 +20,31 @@ export default function Footer(props) {
   const { whiteFont } = props;
   const footerClasses = classNames({
     [classes.footer]: true,
-    [classes.footerWhiteFont]: whiteFont
+    [classes.footerWhiteFont]: whiteFont,
   });
   const aClasses = classNames({
     [classes.a]: true,
-    [classes.footerWhiteFont]: whiteFont
+    [classes.footerWhiteFont]: whiteFont,
   });
   return (
-    <footer className={footerClasses} style={{marginTop:50}}>
+    <footer className={footerClasses} style={{ marginTop: 50 }}>
       <div className={classes.container}>
-        <div className={classes.center} style={{textAlign:'center',letterSpacing: 2}}>
+        <div
+          className={classes.center}
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            letterSpacing: 2,
+            alignItems: "center",
+          }}
+        >
+          <a
+            href="mailto:acmchapterofficer@iips.edu.in"
+            style={{ color: "#fff" }}
+          >
+            {" "}
+            <i class="far fa-envelope"></i> acmchapterofficer@iips.edu.in
+          </a>
           <p>ACM Student Chapter - IIPS(DAVV) · © 2021</p>
         </div>
       </div>
@@ -38,5 +53,5 @@ export default function Footer(props) {
 }
 
 Footer.propTypes = {
-  whiteFont: PropTypes.bool
+  whiteFont: PropTypes.bool,
 };
