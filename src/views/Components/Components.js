@@ -75,23 +75,28 @@ export default function Components(props) {
           <h1 className={'welcomeText'}>Welcome to ACM Chapter</h1>
           <h1 className={'welcomeText1'}>IIPS DAVV, Indore</h1>
           <div style={{marginTop:"5%"}} >
-            <GridContainer style={{display:"flex",flexDirection:"row",justifyContent:"space-between"}}>
+          <center>
+            <GridContainer>
               <GridItem xs={12} sm={12} md={4}>
-              <Button href="https://discord.gg/m4ETnXJ7W5" variant="outlined" style={{color:"white",width:250,fontSize:14,borderColor:"white"}}>Join us on Discord
+              <Button href="https://discord.gg/m4ETnXJ7W5" variant="outlined" style={{color:"white",width:250,fontSize:14,
+              margin:10,
+              borderColor:"white"}}>Join us on Discord
               <i style={{marginLeft:10,fontSize:18}} className='fab fa-discord'></i>
               </Button>
               </GridItem>
               <GridItem xs={12} sm={12} md={4}>
-              <Button href="https://www.instagram.com/acm_iips/" variant="outlined" style={{color:"white",width:250,fontSize:14,borderColor:"white"}}>Follow us on Instagram
+              <Button href="https://www.instagram.com/acm_iips/" variant="outlined" style={{color:"white",width:250,fontSize:14,margin:10,borderColor:"white"}}>Follow us on Instagram
               <InstagramIcon style={{marginLeft:10,fontSize:18}}/>
               </Button>
               </GridItem>
               <GridItem xs={12} sm={12} md={4}>
-              <Button href="https://www.linkedin.com/company/acm-student-chapter-iips-davv" variant="outlined" style={{color:"white",width:250,fontSize:14,borderColor:"white"}}>Follow us on Linkedin
+              <Button href="https://www.linkedin.com/company/acm-student-chapter-iips-davv" variant="outlined" style={{color:"white",
+              margin:10,width:250,fontSize:14,borderColor:"white"}}>Follow us on Linkedin
               <LinkedinIcon style={{marginLeft:10,fontSize:20}}/>
               </Button>
               </GridItem>
             </GridContainer>
+            </center>
           </div>
         </div>
         <KeyboardArrowDownIcon className={'down-arrow'} style={{

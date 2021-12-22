@@ -33,13 +33,11 @@ export default function Events(props) {
 			border: "2px solid #000",
 			boxShadow: theme.shadows[5],
 			// overflowX: "scroll",
-			height: 550,
+			height: "80%",
 			zIndex: 10,
 			padding: theme.spacing(2, 2, 1),
-			width: "100%",
-			[theme.breakpoints.up("md")]: {
-				width: "80%",
-			},
+      overflow:"scroll",
+			width: "80%",
 		},
 	}));
 	function getModalStyle() {
@@ -91,7 +89,7 @@ export default function Events(props) {
 			style={{
 				backgroundColor: "#00091B",
 				color: "white",
-				height: "100vh",
+        height:"100%",
 				// marginBottom: "5%",
 				filter: `${open ? "blur(5px)" : ""}`,
 			}}
@@ -109,7 +107,6 @@ export default function Events(props) {
 					top: 100,
 					backgroundColor: "#00091B",
 					color: "white",
-					// height: "150vh",
 				}}
 			>
 				{!upcomingEvents?.length == 0 ? (
@@ -287,16 +284,17 @@ export default function Events(props) {
 						<GridItem xs={12} sm={12} md={6}>
 							<img
 								src={modalContent?.poster}
-								style={{ width: "100%", height: 500 }}
+								style={{ width: "100%", height: "100%" }}
 								alt="Event Poster"
 							/>
 						</GridItem>
-						<GridItem xs={12} sm={12} md={6}>
-							<h3>
+						<GridItem style={{maxHeight:"100px" }} xs={12} sm={12} md={6}>
+							<div >
+              <h3>
 								<b>{modalContent?.title}</b>
 							</h3>
-							<pre>{modalContent?.description}</pre>
-							<div style={{ display: "flex", justifyContent: "space-between" }}>
+							<p>{modalContent?.description}</p>
+							<div>
 								<Button
 									style={{ margin: "1%", background: "red", color: "white" }}
 									onClick={handleClose}
@@ -315,6 +313,7 @@ export default function Events(props) {
 									Close
 								</Button>
 							</div>
+              </div>
 						</GridItem>
 					</GridContainer>
 				</div>
