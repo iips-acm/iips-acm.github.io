@@ -55,7 +55,7 @@ const Contact = () => {
                         alignItem: 'center',
                         marginTop: 20
                     }}>
-                        <input className="btn btn-primary" id={"btnSubmit"} type="submit" value="Submit"/>
+                        <input style={{cursor:"pointer"}} className="btn btn-primary" id={"btnSubmit"} type="submit" value="Submit"/>
                     </div>
                 </form>
             </div>

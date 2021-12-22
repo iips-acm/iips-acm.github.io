@@ -2,7 +2,6 @@ import React from "react";
 // react component for creating beautiful carousel
 import Carousel from "react-slick";
 import { makeStyles } from "@material-ui/core/styles";
-import LocationOn from "@material-ui/icons/LocationOn";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
