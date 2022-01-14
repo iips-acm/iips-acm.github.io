@@ -53,7 +53,7 @@ export default function Events(props) {
 	}
 	const [modalStyle] = React.useState(getModalStyle);
 	const classes = useStyles();
-	const date = new Date("2021", "11", "26", "16", "00");
+	const date = new Date("2022", "00", "15", "16", "00");
 	React.useEffect(() => {
 		const data = events.filter((item) => item.eventStatus === "upcoming");
 		setUpcomingEvents(data);
@@ -284,7 +284,7 @@ export default function Events(props) {
 						<GridItem xs={12} sm={12} md={6}>
 							<img
 								src={modalContent?.poster}
-								style={{ width: "100%", height: "100%" }}
+								style={{ width: "90%", height: "100%" }}
 								alt="Event Poster"
 							/>
 						</GridItem>
