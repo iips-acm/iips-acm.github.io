@@ -22,7 +22,7 @@ event.`,
           title: "AMA Ask Me Anything",
           poster: require("../assets/img/events/15-Jan-22.jpeg"),
           description:
-            `<prHello Everyone! 👋
+            `Hello Everyone! 👋
 
             Hope you all are safe at your home .
             
